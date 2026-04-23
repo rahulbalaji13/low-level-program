@@ -1,4 +1,4 @@
-// Count set bits 
+// 1. Count set bits 
 #include<stdio.h>
 int main()
 {
@@ -13,6 +13,21 @@ int main()
    printf("%d\n", count);
    return 0;
 }
+
+// 2. Power of 2
+#include<stdio.h>
+int main()
+{
+  int n;
+  scanf("%d", &n);
+  
+  int result = (n > 0) && ((n & (n - 1)) == 0);
+
+  printf("%d\n", result);
+}
+
+
+
 
 
 
